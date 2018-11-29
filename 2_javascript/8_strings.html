@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> strings </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>métodos y propiedades</h1>
+<script> 
+
+var texto = prompt ("Introduce un texto") ;
+	document.write ("Su texto: <br/> ") ;
+	document.write (texto + "<br/> ") ;
+//
+var pletra = texto.charAt(0);
+var rtex =texto.substring (1);
+var pletramayus = pletra.toUpperCase();
+var rtextminus = rtex.toLowerCase();
+
+var tx = juan_pérez;
+//
+	document.write ("Longitud = " .concat(texto.length)
+	.concat (" caracteres <br/>")) ;
+	document.write ("En mayúsculas: " + texto.toUpperCase() + "<br/>");
+	document.write ("En minúsculas: " + texto.toLowerCase() + "<br/>");
+	document.write ("Primer car&aacute;cter: " + texto.charAt(0) + "<br/>" );
+	document.write ("Tercer car&aacute;cter: " + texto.charAt(2) + "<br/>" );
+	document.write ("Primer espacio está en: " + texto.indexOf(" ") + "<br/>");
+	document.write ("La primera mitad del texto es: " +  texto.substring(0, texto.length / 2)+ "<br/>");
+	document.write ("La segunda mitad del texto es: " +  texto.substring(texto.length / 2)+ "<br/> <br/>");
+	//
+	document.write ("La primera letra en mayúsculas y el resto en minúsculas: "   );
+	//document.write ("");
+//mostrar primera palabra en mayuscula
+//
+	
+	
+	
+	
+
+</script>
+</body>
+
+</html>

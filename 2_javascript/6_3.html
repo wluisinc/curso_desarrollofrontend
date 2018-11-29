@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> bucle tipos con validacion de datos </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>cabecera</h1>
+<script> 
+//pedir el inicio y fin de contador hasta que sea un numero o, es decir, asegurarse de que el valor que introduce
+//el usuario son numeros, con un bucle que se ejecute una y otra vez mientras que el valor inicio o fin 
+//no es un numero
+
+var inicio ;
+var fin;
+var inicioNoEsUnNumero = isNaN (inicio)
+var finNoEsUnNumero = isNaN (fin)
+//alert (typeof(inicioNoEsUnNumero)) ;
+while (inicioNoEsUnNumero) {
+	inicio = prompt("indique el inicio");
+	inicioNoEsUnNumero = isNaN(inicio) ;
+	}
+alert (typeof(inicioNoEsUnNumero)) ;
+while (finNoEsUnNumero) {
+	fin = prompt("indique el final");
+	fin = parseInt (fin) ;
+	finNoEsUnNumero = isNaN(fin) ;
+	alert (typeof(fin)) ;
+	}
+//
+var contador = inicio;
+	contador = parseFloat (contador);
+while (contador <= fin){
+	alert (contador);
+	contador = contador + 1 ;
+	}
+while (contador >= fin){
+	alert (contador);
+	contador = contador - 1 ;
+	}
+	
+/*= prompt("indique el final");
+inicio = parseInt (inicio);
+fin = parseInt (fin);*/
+
+</script>
+</body>
+
+</html>

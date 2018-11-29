@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> mathsign sin  </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>cabecera</h1>
+<script> 
+var inicio = prompt ("indique el inicio") ;
+var fin = prompt ("indique el final");
+//alert ("TIPO: " + typeof( inicio))
+inicio = parseInt (inicio);
+fin = parseInt (fin);
+var contador = inicio;
+
+var sumar = Math.sign (fin - inicio)
+
+while (contador != fin){ //!= es distinto de     == es para comparar
+	alert (contador);
+	contador = contador + sumar ;
+	}
+//alert ("TIPO: " + typeof( inicio))
+
+</script>
+</body>
+
+</html>

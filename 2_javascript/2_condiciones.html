@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="es"> 
+<head> 
+<title> condiciones </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>condiciones</h1>
+<script> 
+var age;
+age = prompt ("dime tu edad");
+// condición básica
+if ( age < 18 )
+{
+alert ("under age. ")
+}
+var if_is_adult = age >= 18; 
+//condición con bifurcación
+if ( if_is_adult == true)
+{
+alert ("adult")
+} else // cuando es menor de edad:
+{
+if (age < 3)
+{ alert ("it's a baby");
+} else if (age >=3 && age < 13)
+{
+alert ("it's a child");
+}
+else if (age >=13 && age < 18) 
+{
+alert ("it's a teenager");
+}
+}
+
+</script>
+</body>
+</html>

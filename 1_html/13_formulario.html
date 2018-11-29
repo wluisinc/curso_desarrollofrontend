@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="es"> 
+<head> 
+<title> Ejemplo de formularios </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>formulario de registro</h1>
+<Form>
+Nombre: <input id="nombre" size="100"/> <br/><br/>
+Primer apellido: <input id="primer apellido"/> <br/><br/>
+Segundo apellido: <input id="segundo apellido"/> <br/><br/>
+Email: <input id="email"/> <br/><br/>
+Contraseña: <input id="contraseña" value="******"/> <br/><br/>
+Sugerencias:<br/><Textarea id="sugerencias" rows="10" Cols="100">
+Me gustaría que... 
+</Textarea>
+</Form>
+<br/><br/><br/><br/><br/>
+
+<table border="3px" bordercolor="pink">
+<Form action="mailto:correo@gmail.com" method="get"> <!--necesitamos algo pero el codigo esta ok-->
+<tr> <td>Nombre </td> <td><input id="nombre" size="50" maxlength="100"/> </td> </tr>
+<tr> <td>Primer apellido </td> <td><input id="primer apellido" size="100"/> </td> </tr>
+<tr> <td>Segundo apellido </td> <td><input id="segundo apellido" size="100"/> </td> </tr>
+<tr> <td>Email </td> <td><input id="email" size="30" maxlength="100"/> </td> </tr>
+<tr> <td>Contraseña </td> <td><input id="contraseña" value="******" size="20" maxlength="50"/> </td> </tr>
+<tr> <td>Repetir contraseña </td> <td><input id="contraseña" value="******" size="20" maxlength="50"/> </td> </tr>
+<tr> <td>sugerencias </td> <td><Textarea id="sugerencias" rows="10" Cols="100">
+Me gustaría que... 
+</Textarea> </td> </tr>
+<tr> <td> </td> <td> <input type="button" type="summit" value="enviar por email" /> </td></tr>
+</form>
+
+</table>
+
+</body>
+</html>

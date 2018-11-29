@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> objetos javascript </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>objet document</h1>
+	<script> 
+	//document es un objeto que corresponde al documento HTML
+	//write es una función propia del objeto document, un método
+	document.write ("<h2> holi bro </h2>")
+	document.write ("texto cualquiera")
+	
+var nombre = "";
+var textoEdad = "";
+var edad = parseInt(textoEdad);
+	
+/* alert (isNaN(parseInt(edad)));
+while (isNaN(edad)){
+while (isNan(parseInt(textoEdad))){*/
+	while (isNaN(edad)) {
+	textoEdad = prompt ("indique su edad") ;
+	edad = parseInt(textoEdad);
+	}
+		while (edad <= 0) {
+		textoEdad = prompt ("indique su edad");
+		edad = parseInt(textoEdad) ;
+	}
+	/* ESTO TAMBIEN VALE PARA LOS DE EDAD (en teoria)
+	while (isNaN (edad) || edad <=0)
+	textoEdad = prompt("indique su edad");
+	edad = parseInt (textoEdad); */
+	while ( nombre == ""
+			|| isNaN(parseInt(nombre)) == false) {
+	nombre = prompt ("Indique su nombre: ") ;
+	}
+
+alert("\n Mira lo que hice para ti "+nombre+" :" +
+"\n \t \t -Tu edad es " + edad + "\n \t \t -así que tienes " + edad + " años") ;
+document.write("<br/>Anda! Te llamas " + nombre) ;
+document.write(", y tienes " + edad + " años ") ;
+	</script>
+</body>
+
+</html>
