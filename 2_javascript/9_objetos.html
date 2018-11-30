@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> objetos JS </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>OBJETOS</h1>
+<script> 
+//Llamamos a la funcion constructora del objeto basico de JS. Con la palabra clave new,
+// le decimos a JS que queremos un nuevo objeto (invocando a alguna función constructora)
+// del tipo que sea, en este caso el básico de JS.
+var miPrimerObj = new Object(); // O object mayus
+miPrimerObj.unSubValor = 10;
+miPrimerObj.otraPropiedad = "Un texto" ; //variables miembro van despues de un punto
+miPrimerObj.atributoObjeto = new Object();
+miPrimerObj.variableMiembro = true;
+
+var persona_1 = new Object() ;
+persona_1.nombre = "Morty";
+persona_1.apellido_1 = "Smith";
+persona_1.apellido_2 = "Esmiz";
+persona_1.edad = "17";
+persona_1.salario = 
+	prompt("dime el salario de "+ persona_1.nombre + " " + persona_1.apellido_1) ;
+persona_1.salario = parseFloat (persona_1.salario); //parseInt numeros enteros, parseFloat decimales
+if (persona_1.salario > 0) { //para que solo admita txt habria que hacer un while y isNan
+	persona_1.tieneTrabajo = true;
+} else {
+  persona_1.tieneTrabajo = false;
+}
+
+document.write(persona_1.apellido_1 + " " + persona_1.apellido_2 + ", " + persona_1.nombre);
+document.write("<br/>");
+document.write("Edad: " + persona_1.edad + " años terrícolas");
+if (persona_1.tieneTrabajo){
+	document.write ("<br/> Tiene trabajo");
+} else {
+	document.write ("<br/> No tiene trabajo");
+}
+document.write ("<br/> Salario: " + persona_1.salario + "<br/>");
+//
+var persona_2 = new Object() ;
+persona_2.nombre = "Rick";
+persona_2.apellido_1 = "Sánchez";
+persona_2.apellido_2 = "Sánchez";
+persona_2.edad = "61"; // aquí el numero es txt, si queremos que sea una cifra debería ser:
+//persona_2.edad = parseInt(persona_2.edad);
+persona_2.salario = 
+	prompt("dime el salario de "+ persona_2.nombre + " " + persona_2.apellido_1) ;
+persona_2.salario = parseFloat (persona_2.salario); //parseInt numeros enteros, parseFloat decimales
+if (persona_2.salario > 0) { //para que no admita txt habria que hacer un while y isNaN
+	persona_2.tieneTrabajo = true;
+} else {
+  persona_2.tieneTrabajo = false;
+}
+
+document.write(persona_2.apellido_1 + " " + persona_2.apellido_2 + ", " + persona_2.nombre);
+document.write("<br/>");
+document.write("Edad: " + persona_2.edad + " años terrícolas");
+if (persona_2.tieneTrabajo){
+	document.write ("<br/> Tiene trabajo");
+} else {
+	document.write ("<br/> No tiene trabajo");
+}
+document.write ("<br/> Salario: " + persona_2.salario + "<br/>");
+//
+
+
+</script>
+</body>
+
+</html>

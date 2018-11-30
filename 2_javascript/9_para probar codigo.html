@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> t&iacutetulo </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>cabecera</h1>
+<script> 
+var persona_1 = new Object() ;
+persona_1.nombre = prompt("dime el nombre de la primera persona");
+persona_1.apellido_1 = prompt("dime el primer apellido de la primera persona");
+persona_1.apellido_2 = prompt("dime el segundo apellido de la primera persona");
+persona_1.edad = prompt("dime la edad de la primera persona");
+
+var persona_2 = new Object() ;
+persona_2.nombre = prompt("dime el nombre de la segunda persona");
+persona_2.apellido_1 = prompt("dime el primer apellido de la segunda persona");
+persona_2.apellido_2 = prompt("dime el primer apellido de la segunda persona");
+persona_2.edad = prompt("dime la edad de la segunda persona");
+
+	var p1 = (
+document.write(persona_1.apellido_1 + " " + persona_1.apellido_2 + ", " + persona_1.nombre) +
+document.write("<br/>") +
+document.write("Edad: " + persona_1.edad + " años terrícolas <br/>")
+) ;
+	var p2 = (
+document.write(persona_2.apellido_1 + " " + persona_2.apellido_2 + ", " + persona_2.nombre)+
+document.write("<br/>") +
+document.write("Edad: " + persona_2.edad + " años terrícolas <br/>")
+) ;
+	var orden = prompt(" Introduce orden ( n = nombre, a = apellido")
+	
+var nTer = 
+var aTer =
+/* ESTO SE PUEDE METER EN UNA VARIABLE CON UN OPERADOR TERNARIO
+if (persona_1.nombre < persona_2.nombre){
+p1;
+p2;
+}
+else {
+p2;
+p1;
+}
+LA IDEA SERIA ASIGNARLE ESTO A LA VARIABLE QUE ELIGIESE EL USER*/
+
+if (persona_1.nombre < persona_2.nombre){
+p1;
+p2;
+}
+else {
+p2;
+p1;
+}
+
+	if (persona_1.apellido_1 < persona_2.apellido_1){
+	p1;
+	p2;
+	}
+	else {
+	p2;
+	p1;
+	}
+
+/*
+var persona_3 = new Object() ;
+persona_3.nombre = "Dime tu nombre";
+persona_3.apellido_1 = "Dime tu primer apellido";
+persona_3.apellido_2 = "Dime tu segundo apellido";
+persona_3.edad = "Dime tu edad";
+
+document.write(persona_3.apellido_1 + " " + persona_3.apellido_2 + ", " + persona_3.nombre);
+document.write("<br/>");
+document.write("Edad: " + persona_3.edad + " años terrícolas");
+*/
+</script>
+</body>
+
+</html>

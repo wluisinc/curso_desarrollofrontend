@@ -1,0 +1,5 @@
+Probando a subir un fichero con otro controlador de versiones
+texto añadido 1
+Texto añadido 2
+Ahora estamos probando igual a seguir subiendo modificaciones mientras conectamos
+y clonamos otro repositorio en el ordenador
