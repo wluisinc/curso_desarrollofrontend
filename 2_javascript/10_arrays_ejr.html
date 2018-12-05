@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> arrays ejr </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>ejercicio Arrays</h1>
+<script> 
+/*
+pedir al usuario las ciudades a las que quiere bajar, si el usuario no pone nada
+el programa termina y se muestra su lista de ciudades 
+ */
+var ciudades = new Array() ;
+var nuevaCiudad = prompt("introduzca una ciudad (o nada para terminar)") ;
+
+var i = 0;
+while (nuevaCiudad != "") {
+	ciudades[i] = nuevaCiudad;
+	i = i + 1 ;
+	nuevaCiudad = prompt ("introduzca una ciudad (o nada para terminar)") ;
+}
+/*
+ciudades[0] = nuevaCiudad;
+ciudades[1] = "Córdoba";
+ciudades[2] = "Barcelona";
+ciudades[3] = "Madrid";
+*/
+i = 0 ;
+	while (i < ciudades.length) {
+	document.write("<br/>" + ciudades[i]) ;
+	i = i + 1 ;
+}
+</script>
+</body>
+
+</html>

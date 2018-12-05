@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> arrays </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>Arrays</h1>
+<script> 
+	var notas = new Array();
+	notas[0] = 3;
+	notas[1] = 7;
+	notas[2] = 8.5;
+	notas[3] = 10;
+	notas[4] = 5.5;
+document.write("<br/> Elemento 0: " + notas[0]);
+document.write("<br/> Elemento 1: " + notas[1]);
+document.write("<br/> Elemento 2: " + notas[2]);
+
+var i = 0; //actua de contador hasta 4
+while (i < 7) {
+	document.write ("<br/> Elemento " + i + ": " + notas [i]) ;
+	i = i + 1 ;
+}
+
+var ciudades = ["Madrid", "Barcelona", "Cordoba"]
+i = 0;
+while (i < 3) {
+		document.write ("<br/>" + i + ": " + ciudades [i]);
+		i = i + 1 ;
+}
+
+	var marcas = new Array("Kia", "Seat", "Mercedes") ;
+	var arrayVacio = [] ; //new Array ()
+
+	var moviles = new Array();
+	moviles[0] = new Object();
+	moviles[0].marca = "Samsung";
+	moviles[0].ram = 16;
+	moviles[1] = new Object();
+	moviles[1].marca = "Sony";
+	moviles[1].ram = 4;
+	moviles[2] = new Object();
+	moviles[2].marca = "Iphone";
+	moviles[2].ram = 32;
+	
+	moviles[1].ram = 6;
+	document.write ("<br/> RAM Ultimo elemento: " + moviles[moviles.length - 1].ram + " Gb") ;
+	
+	document.write("<br/>RAM Ultimo elemento: " + moviles[moviles.length - 1].ram + " Gb") ;
+
+</script>
+</body>
+
+</html>
