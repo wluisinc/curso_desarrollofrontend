@@ -51,7 +51,7 @@ for (var fila = 0; fila < 10; fila++) {
 //
 document.write("<table border=\"1\">");
 document.write("<tr>");
-for ( var num = 1 ; num < 4 ; num++){ 
+for ( var num = 1 ; num < 11 ; num++){ 
 	document.write("<th>");
 	document.write("Tabla del " + num);
 	document.write("</th>");
@@ -61,11 +61,31 @@ document.write("<tr>");
 		//AQUI MOSTRAR UNA TABLA DE MULTIPLICAR
 for (num = 1; num < 4; num++) {
 	document.write("<td>");
-	document.write (num + " * 1 = " + num);
+	document.write (num + " * 1 = " + num * 1);
 	document.write("</td>");
 }
 document.write("</tr>");
 
+document.write("<tr>");
+		//AQUI MOSTRAR UNA TABLA DE MULTIPLICAR
+for (num = 1; num <= 10; num++) {
+	document.write("<td>");
+	document.write (num + " * 2 = " + num * 2);
+	document.write("</td>");
+}
+document.write("</tr>");
+
+// FOR DENTRO DE OTRO FOR, EJERCICIO DE LAS TABLAS DE MULTIPLICAR MASMENOS BIEN
+for (tab = 1 ; tab < 11 ; tab++){ 
+document.write("<tr>");
+	
+for (num = 1; num < 11; num++) {
+	document.write("<td>");
+	document.write (num + " X " + tab + " = " + num * tab);
+	document.write("</td>");
+}
+document.write("</tr>");
+}
 document.write("</table>")
 
 
