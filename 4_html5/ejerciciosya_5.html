@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>17jsy</title>
+</head>
+<body>
+
+<script> //batidora
+    function calcmaspeq (num_1, num_2){
+        if(num_1 < num_2){
+            return num_1;
+        }else{
+            return num_2;
+        }
+    }
+//pedir batidos
+document.write(calcmaspeq(5,7));
+
+var cualquiera = 4 * 8;
+var menor = calcmaspeq (cualquiera, 40);
+document.write(menor);
+var numUsu = parseInt(prompt("dame un numerio"));
+calcmaspeq(numUsu, 20);
+</script>
+</body>
+</html>

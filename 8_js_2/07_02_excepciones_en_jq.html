@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_texto"></div>
+    <input id="demo" type="text">
+    <button type="button" onclick="botonPulsado()"> Test Input</button>
+    <p id="p01"> </p>
+  
+    <script 
+  src="jq/jquery-3.3.1.js"></script>
+  <script>
+   function botonPulsado (){
+     var x;
+     $("#p01").html("");
+     x = $("#demo").val();
+  try{
+      if (x == ""){
+        throw new Error("El campo está vacío");
+      }
+      if (isNaN(x)){
+        throw new Error ("No es un numero");
+      }
+      if (x < 5 || x > 10){
+        throw new Error ("está fuera de rango")
+      } $("#p01").html("Correcto");
+  } catch (err){
+    $("#p01").html("El texto " + err.message);
+  } finally {
+    
+  }
+}
+  </script>
+</body>
+</html>
+//https://www.w3schools.com/js/js_errors.asp 

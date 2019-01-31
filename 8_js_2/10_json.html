@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //se guarda en RAM fto binario
+    var hotel = new Object();
+    hotel.nombre = "Hotel NH";
+    hotel.direccion = "c/la que tu quieras chulo, 33";
+    hotel.precio = 86,3;
+    hotel.abierto = true;
+
+// vamos a serializar (datos en binario a fto texto)
+
+    var textoJSONhotel = JSON.stringify(hotel);
+    document.write(textoJSONhotel);
+
+/*
+{
+"nombre":"Hotel NH",
+"direccion":"c/la que tu quieras chulo, 33",
+"precio":86,
+"abierto":true
+}
+*/
+
+    var textoJSONotroHotel = `{"nombreHotel":"Hotel patata",
+    "direccion":"c/de la patata, 33",
+    "precio":86,
+    "abierto":true}`;
+
+    var objOtroHotel = JSON.parse(textoJSONotroHotel);
+    alert(objOtroHotel.nombreHotel);
+
+    var miHotel = `{"nombre":"Hotel potasio",
+    "direccion":"c/del potasio, 32",
+    "precio":45,
+    "abierto":true,
+    "churumbeles": null
+    }`;
+
+    document.write(`<h2>${miHotel.nombre}</h2>`);
+    document.write(`<h2>${miHotel.precio}</h2>`);
+    document.write(`<h2>${miHotel.churumbeles}</h2>`);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_texto"></div>
+    <div id="div_clockie"></div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script> 
+    function compararPorAnio(a, b){
+        if (a.getFullYear() > b.getFullYear()){
+            return 1;
+        } else if (a.getFullYear() < b.getFullYear()){
+            return -1;
+        } else{
+            return 0;
+        }
+       
+    }
+
+    // Crearemos un Array con fechas
+    // Ordenaremos por el modo por defecto de sort
+    // Haremos una función específica
+    function funcionPrincipal(){
+        var fechas = [
+            new Date (1234567891234),
+            new Date (2018, 12, 1, 9), // 9 de la mañana del 1 de dic
+            new Date ("January 8, 2019 "),
+            new Date ("February 14, 2018, 09:00:00"),
+        ];
+
+    
+        $("#div_texto").html((new Date()).toString());
+        // Mostramos fechas tal cual:
+        $("#div_texto").append("<h2>" + fechas.join("<br/>") + "</h2>");
+        var fechasSort = fechas.sort();
+        $("#div_texto").append("<br/><h2>" + fechasSort.join( "<br/>") + "</h2>");
+        $("#div_texto").append("</br><h2>Resultado: " + compararPorAnio(new Date(), fechas[3]) + "</h2>");
+        // Esto llama a la función que comprueba el orden del array en función del año
+
+        //ordenar fechas por año:    
+        fechasSort = fechas.sort(compararPorAnio);
+        $("#div_texto").append("</br><h2>" + fechasSort.join("</br>") + "</h2>");
+    }             //Buscar metodos de ordenamiento
+    
+    jQuery(document).ready( funcionPrincipal );
+    </script>
+    </body>
+    </html>

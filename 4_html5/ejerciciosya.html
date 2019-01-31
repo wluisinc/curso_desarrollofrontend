@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document6jsy</title>
+</head>
+<body>
+
+<script>
+    var nota1 = prompt("Introduce resultado de mates");
+    var nota2 = prompt("Introduce resultado de lengua");
+    var nota3 = prompt("Introduce resultado de inglés");
+    nota1 = parseInt (nota1);
+    nota2 = parseInt (nota2);
+    nota3 = parseInt (nota3);
+    function opera() {
+        var suma = nota1 + nota2 + nota3 ;
+        var divide = suma / 3 ;
+        return divide;
+    }
+
+if (opera() >= 7){
+    alert("promociona");
+}else {
+    alert("no promociona")
+}
+</script>
+</body>
+</html>

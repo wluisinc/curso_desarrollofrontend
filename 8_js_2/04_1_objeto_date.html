@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_texto"></div>
+    <div id="div_clockie"></div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script>
+  
+    //$(document).ready( //jquery quiero el objeto del html con todas las funcionalidades jq(este documento vaya)
+        function funcionPrincipal(){
+            var fechaActual = new Date();
+            $("#div_texto").html("año: " + fechaActual.getFullYear()); //con # se pide por id y $ es jq
+            // se le pide que los objetos con ese nombre se modifiquen en el documento para que hagan esto.
+            $("#div_texto").html( $("#div_texto").html() + dameHora());
+            $("#div_texto").html( $("#div_texto").html() + dameHoraUTC());
+            
+        }
+        function dameHora() {
+            var fechaActual = new Date();
+            var horaFormateada = " Mes: " + fechaActual.getMonth();
+            horaFormateada += " D&iacute;a: " + fechaActual.getDate();
+            horaFormateada += " Hora: " + fechaActual.getHours();
+            horaFormateada += " Min: " + fechaActual.getMinutes();
+            horaFormateada += " Secs: " + fechaActual.getSeconds();
+            horaFormateada += " UTC,franja horaria: " + fechaActual.getUTCHours();
+            return horaFormateada;
+        }
+        
+    
+    jQuery(document).ready(funcionPrincipal);//lo mismo que la línea $ 18 pero dejando la funcion fuera y llamandola despues
+    // con .html se modifica lo que hay en la caja, por lo que para añadir algo hay que implementarlo en esa modificación
+    
+    // se puede juntar todo en la función que es llamada,concatenando, sino s epuede llamar a las dos funciones
+    //pero pueden "pisarse"
+    </script>
+  
+    
+</body>
+</html>

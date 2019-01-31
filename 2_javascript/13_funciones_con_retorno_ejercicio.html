@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- creator: Luisin lvl 1 -->
+<html lang="es"> 
+<head> 
+<title> t&iacutetulo </title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h1>cabecera</h1>
+
+
+
+<script> 
+//crear funcion que muestre 6 cabeceras que se pase por parametros (mediante bucle)
+//Otra que reciba 3 parametros. Los dos primeros son los operandos, el tercero el operador (+-*/) y que muestre el resultado (dentro de la funcion) 
+//hacer tambien una función que eleve al cubo, probar con 3 (27) y 4 (64)
+
+//1
+function dameSeisCabeceras(texto){
+
+for(var nivel = 1; nivel <= 6; nivel++){
+var abreH = "<h" + nivel + ">" ;
+var cierraH = "</h" + nivel + ">" ;
+document.write abreH + moscas() + cierraH
+}
+}
+function dameCabecera ( texto, nivel){
+    var abreH = "<h" + nivel + ">" ;
+var cierraH = "</h" + nivel + ">" ;
+document.write abreH + dameSeisCabeceras() + cierraH
+}
+function muestraSeisCabeceras(titulo) {
+    for (var i = 1; i <=6; i ++){
+
+    }
+}
+
+//2
+function recibidora (operando1, operando2, operador){
+
+var totalS = (operando1+operando2);
+var totalR = (operando1-operando2);
+var totalM = (operando1*operando1);
+var totalD = (operando1/operando2);
+if (operador == "suma"){
+    document.write("</br>");
+    document.write(operando1 + " + " + operando2 + " = " + totalS);
+}
+else if (operador == "resta"){
+    document.write("</br>");
+    document.write(operando1 + " - " + operando2 + " = " + totalR);
+}
+else if (operador == "multiplica"){
+    document.write("</br>");
+    document.write(operando1 + " x " + operando2 + " = " + totalM);
+}
+else if (operador == "divide"){
+    document.write("</br>");
+    document.write(operando1 + " / " + operando2 + " = " + totalD);
+}
+}
+recibidora(4, 5, "suma");
+recibidora(8, 5, "resta");
+recibidora(4, 5, "multiplica");
+recibidora(2, 6, "divide");
+// 2 bien
+
+</script>
+</body>
+</html>

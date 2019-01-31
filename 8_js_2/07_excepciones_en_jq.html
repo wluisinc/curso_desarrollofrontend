@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_texto"></div>
+  
+    <script 
+  src="jq/jquery-3.3.1.js"></script>
+  <script>
+  try{
+     ("Quenoooo") throw new Error("Toma error, tomaaa");
+      //sin almohadilla
+      jQuery("?div_texto").append("eeeeeeeeh");
+    funcionQueNo
+  } catch (elError){
+    $("#div_texto").append("<p>Nos hemos quedado sin cena</p>"); //append es añadir dentro
+    $("#div_texto").append(elError);
+  } finally {
+    $("#div_texto").append("<br/>Checking el finally");
+  }
+    $("#div_texto").append("<br/> El programa se sigue ejecutando");
+  
+  </script>
+</body>
+</html>

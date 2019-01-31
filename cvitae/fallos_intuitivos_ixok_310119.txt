@@ -1,0 +1,6 @@
+Personalmente separaría el Footer un poco mas del ultimo párrafo.
+En el Header suprimiría la pestaña de inicio o el enlace de "gestor Portfolios"
+La pestaña para ver los Portfolios la simplificaría un poco mas:
+	al pasar el raton por encima se despliega el menú
+	al hacer click directamente vaya al listado completo
+En Nuevo hacía los botones ligeramente mas pequeños y centrados para que haya espacio entre ellos
